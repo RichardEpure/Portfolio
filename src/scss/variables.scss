@@ -1,0 +1,24 @@
+$border-light: hsla(0, 0%, 70%, 15%);
+$family-sans-serif: "Roboto";
+$primary: hsl(10, 62%, 62%);
+$scheme-invert-bis: hsl(0, 0%, 82%);
+$scheme-invert-ter: hsl(0, 0%, 80%);
+$scheme-invert: hsl(0, 0%, 84%);
+$scheme-main-bis: hsl(217, 32%, 19%);
+$scheme-main-ter: hsl(218, 24%, 15%);
+$scheme-main: hsl(219, 23%, 27%);
+$secondary: hsl(348, 21%, 32%);
+$shadow-thin: 0 2px 5px 1px rgba(17, 17, 17, 0.4);
+$shadow: 0 5px 8px 3px rgba(17, 17, 17, 0.4);
+$subtitle-family: "Montserrat";
+$tertiary: hsl(295, 12%, 18%);
+$text-strong: hsl(0, 0%, 86%);
+$text: hsl(0, 0%, 74%);
+$title-family: "Montserrat";
+
+$background: $scheme-main;
+$link-active: $primary;
+$link-focus: $primary;
+$link-hover: $primary;
+$link: $text;
+$tag-background-color: $secondary;
