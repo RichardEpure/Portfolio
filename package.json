@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add dist -f && git commit -m 'add build files'  && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@fontsource/montserrat": "^4.5.12",

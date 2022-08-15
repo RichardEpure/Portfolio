@@ -7,3 +7,4 @@ This is my portfolio which briefly describes who I am and details my education, 
  - Install requirements with `npm install`
  - For dev environment `npm run dev`
  - To build the project `npm run build` 
+ - To deploy `npm run deploy`
