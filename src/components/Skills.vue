@@ -5,7 +5,6 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-console.log(props.layout);
 </script>
 
 <template>
