@@ -63,6 +63,10 @@ switch (type) {
 .card {
   border-radius: 20px;
   text-align: left;
+
+  .content {
+    white-space: pre-line;
+  }
 }
 
 .media {

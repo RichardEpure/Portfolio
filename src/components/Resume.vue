@@ -8,8 +8,7 @@ const education_cards: Card[] = [
     type: "education",
     title: "Queen Mary University of London",
     subtitle: "BSc of Computer Science with Industrial Experience",
-    content: `Graduated with 1st class honours and won the Draper's Company undergraduate prizes for
-      outstanding achievements in the academic years 2020/2021 & 2021/2022.`,
+    content: `Graduated with 1st class honours and won the Draper's Company undergraduate prizes for outstanding achievements in the academic years 2020/2021 & 2021/2022.`,
     skills: [
       "Web Programming",
       "Algorithms & Data Structures",
@@ -34,14 +33,37 @@ const education_cards: Card[] = [
 const experience_cards: Card[] = [
   {
     type: "experience",
-    title: "Soapbox",
-    subtitle: "Web Developer",
-    content: `Joined a team of full stack web developers and contributed to over a dozen projects such as 'HDRUK',
-      'Ada Lovelace Institute', and 'Institute of Development Studies'. There I took a variety of responsibilites
-      such as working on new projects, performing maintenenace on older projects, deploying builds,
-      communicating with clients, and bug fixing.`,
+    title: "2Simple",
+    subtitle: "Software Developer",
+    content: `• Migrated a project from Vue 2 class components to Vue 3 composition API, updated dependencies and build tools.
+• Developed internal tooling for automated testing using puppeteer for various applications.
+• Created unit and integration tests with Jest and Vue Test Utils, and prepared test plans for the testing team.
+• Independently led significant legacy project rewrites from backbone.js to Vue 3 for improved maintainability, flexibility, and developer accessibility.
+• Implemented backend API for AI with models from Open AI & Stability AI, and configured an admin panel for prompt customization using handlebars.
+• Collaborated closely with the design team to optimize user experience on the frontend.`,
     skills: [
-      "HTML/CSS",
+      "TypeScript",
+      "Vue",
+      "JavaScript",
+      "MonoDB",
+      "Jest",
+      "SCSS",
+      "PHP",
+      "jQuery",
+      "Docker",
+    ],
+    date: "March 2023—Present",
+  },
+  {
+    type: "experience",
+    title: "Soapbox",
+    subtitle: "Full-Stack Developer",
+    content: `• Developed custom themes, plugins, and components for WordPress using PHP for back-end development.
+• Implemented best practices for web development including BEM, ITCSS, and WCAG standards.
+• Ensured reliability of live websites by using SSH for remote deployment, backups, and maintenance.
+• Streamlined work across multiple projects by containerizing each environment with Docker and DDEV.
+• Engaged with clients to address and resolve issues effectively while maintaining detailed documentation.`,
+    skills: [
       "JavaScript",
       "jQuery",
       "SCSS",
@@ -57,9 +79,13 @@ const experience_cards: Card[] = [
     type: "experience",
     title: "Freelance",
     subtitle: "Web Developer & Consultant",
-    content: `Designed, created and hosted several websites as a freelance web developer for
-      GSA Construction, GRS Construction, and IBJoinery.`,
-    skills: ["HTML/CSS", "SCSS", "JavaScript", "AWS"],
+    content: `• Utilized AWS to host, certify, cache, and distribute websites.
+• Developed a responsive front-end to ensure compatibility across various screen sizes.
+• Integrated relevant APIs like Google Maps Platform for enhanced functionality.
+• Enhanced SEO through the use of Metadata, accessibility, and optimizing data loading efficiency.
+• Ensured GDPR compliance in website development when necessary.
+• Collaborated with clients to define requirements and strategize the website's development.`,
+    skills: ["JavaScript", "SCSS", "AWS"],
     date: "February 2019—September 2019",
   },
 ];
@@ -69,39 +95,63 @@ const pet_projects: Card[] = [
     type: "project",
     title: "Crust",
     subtitle: "Communications App",
-    content: `Crust is a work in progress Tauri based application for voice communication, chat messaging and
-      screen sharing. It uses a peer-to-peer model to give users more control over their network.`,
+    content: `A collaborative project that features a peer-to-peer text, voice, and screensharing application made using Tauri, Vue, Vite and TypeScript.`,
     skills: ["Rust", "Tauri", "TypeScript", "Vue", "Vite", "SCSS"],
-    date: "July 2022—Present",
+    date: "",
     url: "https://github.com/CallumWatkins/crust",
+  },
+  {
+    type: "project",
+    title: "2048",
+    subtitle: "Video game",
+    content: `A remake of the classic game 2048, written in Rust using Bevy.`,
+    skills: ["Rust", "Bevy"],
+    date: "",
+    url: "https://github.com/RichardEpure/2048",
+  },
+  {
+    type: "project",
+    title: "Sokoban Solver",
+    subtitle: "Reinforcement learning AI",
+    content: `My final year project for University. Creating a machine learning model to play and solve Sokoban levels. The learning experience has been invaluable as I tackled an extremely difficult challenge that is still currently being explored by AI experts.`,
+    skills: ["Python", "Stable Baselines", "Gym"],
+    date: "",
+    url: "https://github.com/RichardEpure/Sokoban-Solver",
+  },
+  {
+    type: "project",
+    title: "3D Snake",
+    subtitle: "Video game",
+    content: `My first attempt at tackling OpenGL and shaders using C++ with GLFW. Sparked my interest in shaders and became my motivation for taking Computer Graphics at University.`,
+    skills: ["C++", "OpenGL", "GLFW", "GLSL"],
+    date: "",
+    url: "https://github.com/RichardEpure/3D-snake",
   },
 ];
 
 const skills: string[] = [
-  "Java",
+  "TypeScript",
+  "JavaScript",
+  "Go",
   "Rust",
   "Python",
-  "PHP",
-  "JavaScript",
-  "TypeScript",
-  "HTML/CSS",
-  "C++",
-  "GLSL",
-  "Tauri",
-  "Django",
-  "Vue",
+  "MonoDB",
   "React",
-  "SCSS",
+  "Vue",
   "WebGL",
-  "jQuery",
-  "PyTorch",
-  "PyGame",
-  "JavaFX",
-  "SQL",
   "WordPress",
   "AWS",
+  "Jest",
   "Docker",
-  "Git",
+  "PHP",
+  "Java",
+  "Tauri",
+  "Django",
+  "Express.js",
+  "SCSS",
+  "jQuery",
+  "C++",
+  "GLSL",
   "Godot",
 ];
 </script>
@@ -122,10 +172,10 @@ const skills: string[] = [
         <h3 class="title is-4">Personal Projects</h3>
         <ResumeCard v-for="card in pet_projects" :resume_card="card" />
       </div>
-      <div class="resume-section">
+      <!-- <div class="resume-section">
         <h3 class="title is-4">Skills</h3>
         <Skills :skills="skills" />
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

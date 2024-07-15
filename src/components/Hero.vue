@@ -9,12 +9,12 @@ import SocialLink from "./SocialLink.vue";
         <figure class="image mb-4 is-128x128">
           <img
             class="is-rounded"
-            src="../assets/face.jpeg"
+            src="../assets/face.png"
             alt="picture of Richard"
           />
         </figure>
-        <h1 class="title is-2">RICHARD EPURE</h1>
-        <h2 class="subtitle">Web Developer & Computer Science Graduate</h2>
+        <h1 class="title is-3">RICHARD EPURE</h1>
+        <h2 class="subtitle">Software Engineer</h2>
         <div class="is-flex is-justify-content-center is-align-items-center">
           <SocialLink icon="github" url="https://github.com/RichardEpure" />
           <SocialLink
@@ -34,5 +34,11 @@ import SocialLink from "./SocialLink.vue";
 <style lang="scss" scoped>
 .image {
   margin: auto;
+
+  img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  }
 }
 </style>
